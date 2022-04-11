@@ -158,11 +158,3 @@ var cart = document.querySelector(".popover-cart");
 function openCart() {
     cart.classList.toggle("popover-cart-open");
 }
-
-// popovers close  script
-
-var popover = document.querySelector(".popover-cart-open");
-
-function popoverClose() {
-    popover.classList.add("closed-popover");
-}
