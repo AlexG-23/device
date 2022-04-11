@@ -150,3 +150,11 @@ function prevSlide() {
         bulletBtnThird.classList.remove("bullets-button-current");
     }
 }
+
+// cart script
+
+var cart = document.querySelector(".popover-cart");
+
+function openCart() {
+    cart.classList.toggle("popover-cart-open");
+}
