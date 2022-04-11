@@ -55,3 +55,98 @@ function clickThird() {
     serviceBtnThird.classList.add("service-nav-current");
     serviceItemThird.classList.add("service-item-active");
 }
+
+// bullets script
+var sliderFirst = document.querySelector(".first-slide");
+var sliderSecond = document.querySelector(".second-slide");
+var sliderThird = document.querySelector(".third-slide");
+
+var bulletBtnFirst = document.querySelector(".bullets-button:nth-of-type(1)");
+var bulletBtnSecond = document.querySelector(".bullets-button:nth-of-type(2)");
+var bulletBtnThird = document.querySelector(".bullets-button:nth-of-type(3)");
+
+function bulletFirst() {
+    sliderFirst.classList.add("slider-item-active");
+    bulletBtnFirst.classList.add("bullets-button-current");
+
+    sliderSecond.classList.remove("slider-item-active");
+    bulletBtnSecond.classList.remove("bullets-button-current");
+
+    sliderThird.classList.remove("slider-item-active");
+    bulletBtnThird.classList.remove("bullets-button-current");
+}
+
+function bulletSecond() {
+    sliderFirst.classList.remove("slider-item-active");
+    bulletBtnFirst.classList.remove("bullets-button-current");
+
+    sliderSecond.classList.add("slider-item-active");
+    bulletBtnSecond.classList.add("bullets-button-current");
+
+    sliderThird.classList.remove("slider-item-active");
+    bulletBtnThird.classList.remove("bullets-button-current");
+}
+
+function bulletThird() {
+    sliderFirst.classList.remove("slider-item-active");
+    bulletBtnFirst.classList.remove("bullets-button-current");
+
+    sliderSecond.classList.remove("slider-item-active");
+    bulletBtnSecond.classList.remove("bullets-button-current");
+
+    sliderThird.classList.add("slider-item-active");
+    bulletBtnThird.classList.add("bullets-button-current");
+}
+
+// slider script
+function nextSlide() {
+    if (sliderFirst.classList.contains("slider-item-active")) {
+        sliderSecond.classList.add("slider-item-active");
+        bulletBtnSecond.classList.add("bullets-button-current");
+
+        sliderFirst.classList.remove("slider-item-active");
+        bulletBtnFirst.classList.remove("bullets-button-current");
+    }
+
+    else if (sliderSecond.classList.contains("slider-item-active")) {
+        sliderThird.classList.add("slider-item-active");
+        bulletBtnThird.classList.add("bullets-button-current");
+
+        sliderSecond.classList.remove("slider-item-active");
+        bulletBtnSecond.classList.remove("bullets-button-current");
+    }
+
+    else if (sliderThird.classList.contains("slider-item-active")) {
+        sliderFirst.classList.add("slider-item-active");
+        bulletBtnFirst.classList.add("bullets-button-current");
+
+        sliderThird.classList.remove("slider-item-active");
+        bulletBtnThird.classList.remove("bullets-button-current");
+    }
+}
+
+function prevSlide() {
+    if (sliderFirst.classList.contains("slider-item-active")) {
+        sliderThird.classList.add("slider-item-active");
+        bulletBtnThird.classList.add("bullets-button-current");
+
+        sliderFirst.classList.remove("slider-item-active");
+        bulletBtnFirst.classList.remove("bullets-button-current");
+    }
+
+    else if (sliderSecond.classList.contains("slider-item-active")) {
+        sliderFirst.classList.add("slider-item-active");
+        bulletBtnFirst.classList.add("bullets-button-current");
+
+        sliderSecond.classList.remove("slider-item-active");
+        bulletBtnSecond.classList.remove("bullets-button-current");
+    }
+
+    else if (sliderThird.classList.contains("slider-item-active")) {
+        sliderSecond.classList.add("slider-item-active");
+        bulletBtnSecond.classList.add("bullets-button-current");
+
+        sliderThird.classList.remove("slider-item-active");
+        bulletBtnThird.classList.remove("bullets-button-current");
+    }
+}
