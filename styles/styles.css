@@ -371,7 +371,7 @@ body {
 
 .popover {
   position: absolute;
-  right: -85px;
+  right: -125px;
   width: 320px;
   min-height: 300px;
   color: var(--white);
