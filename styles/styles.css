@@ -2454,7 +2454,7 @@ body {
   line-height: 20px;
 }
 
-.delivery-form-field[name="order"] {
+.delivery-form-field[name="Order"] {
   width: 540px;
   margin-bottom: 50px;
 }
@@ -2574,7 +2574,7 @@ body {
   color: var(--black);
 }
 
-.delivery-form-field[name="amount"] {
+.delivery-form-field[name="Amount"] {
   display: inline-block;
   padding: 5px;
   text-align: center;
@@ -2583,8 +2583,8 @@ body {
   height: 60px;
 }
 
-.delivery-form-field[name="amount"]::-webkit-outer-spin-button,
-.delivery-form-field[name="amount"]::-webkit-inner-spin-button {
+.delivery-form-field[name="Amount"]::-webkit-outer-spin-button,
+.delivery-form-field[name="Amount"]::-webkit-inner-spin-button {
   appearance: none;
   -webkit-appearance: none;
   margin: 0;
