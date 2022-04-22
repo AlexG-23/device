@@ -2538,7 +2538,7 @@ body {
   outline: none;
 }
 
-.delivery-form-field[name="Имя"] {
+.delivery-form-field[name="name"] {
   background-image: url("../images/icons/login-gray-icon.svg");
   background-position: 325px 50%;
   background-repeat: no-repeat;
@@ -2574,7 +2574,7 @@ body {
   color: var(--black);
 }
 
-.delivery-form-field[name="Количество"] {
+.delivery-form-field[name="amount"] {
   display: inline-block;
   padding: 5px;
   text-align: center;
@@ -2583,8 +2583,8 @@ body {
   height: 60px;
 }
 
-.delivery-form-field[name="Количество"]::-webkit-outer-spin-button,
-.delivery-form-field[name="Количество"]::-webkit-inner-spin-button {
+.delivery-form-field[name="amount"]::-webkit-outer-spin-button,
+.delivery-form-field[name="amount"]::-webkit-inner-spin-button {
   appearance: none;
   -webkit-appearance: none;
   margin: 0;
