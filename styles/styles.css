@@ -2454,7 +2454,7 @@ body {
   line-height: 20px;
 }
 
-.delivery-form-field[name="Заказ"] {
+.delivery-form-field[name="order"] {
   width: 540px;
   margin-bottom: 50px;
 }
